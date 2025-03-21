@@ -35,6 +35,17 @@
         background: theme('colors.accent.DEFAULT');
         border-radius: 2px;
     }
+    .expand-content {
+        cursor: pointer;
+        transition: all 2s;
+        overflow: hidden;
+        max-height: 56px;
+
+        &:hover{
+            max-height: 1000px;
+        }
+    }
+
 }
 body {
     background: #fff;

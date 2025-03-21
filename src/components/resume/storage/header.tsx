@@ -2,7 +2,7 @@ import { Github } from "lucide-react";
 import React from "react";
 
 export default {
-  title: "马文澍-Web开发工程师",
+  title: "Web开发工程师-马文澍",
   university: "武汉科技大学",
   links: [
     { type: "phone", label: "📞 15623192717", href: "tel:+8615623192717" },

@@ -10,7 +10,7 @@ export default function PersonalCharacteristics() {
     <div className={"mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]"}>
       {
         personalCharacteristics.items.map((person, index) => (
-          <div key={index}>
+          <div key={index} className={"text-gray-500 text-sm"}>
             {person}
           </div>
         ))

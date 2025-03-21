@@ -8,7 +8,7 @@ export default function Experiences() {
         🤵🏻 {experiences.title}
       </h2>
       {experiences.items.map((experience, index) => (
-        <div key={index} className="mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]">
+        <div key={index} className="expand-content mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]">
           <div className={"flex justify-between"}>
             <div>
               <span className="text-gray-500">

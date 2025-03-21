@@ -8,12 +8,12 @@ function AdvantageItem ({item}: {
 }){
   const [open, setOpen] = useState(true);
   return <>
-    <div className="advantage mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]">
-      <div className={"advantage-header flex justify-between"} onClick={() => setOpen(!open)}>
+    <div className="expand-content advantage mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]">
+      <div className={"advantage-header flex justify-between"} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
         <h3 className="text-xl font-semibold">{item.title}</h3>
-        { !open ? <ChevronRight className={"expand-arrow text-gray-400"}/> : <ChevronDown className={"expand-arrow text-gray-400"}/> }
+        <ChevronRight className={`expand-arrow text-gray-400 transition-all ${open ? 'rotate-90': 'right-0'}`}/>
       </div>
-      <div className={`advantage-body list-disc pl-5 ${open ? 'w-auto': 'hidden'}`}>
+      <div className={`advantage-body list-disc pl-5 pt-2`}>
         {item.details.map((detail, i) => (
           <div key={i} className="text-gray-700">
             {typeof detail === "string" ? (
