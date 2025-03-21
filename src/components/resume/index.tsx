@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@/components/resume/header.tsx";
 import Advantage from "@/components/resume/advantage.tsx";
 import Experiences from "@/components/resume/experiences.tsx";
+import PersonalCharacteristics from "@/components/resume/personalCharacteristic.tsx";
 
 const Resume = () => {
   return (
@@ -9,6 +10,7 @@ const Resume = () => {
       <Header/>
       <Advantage/>
       <Experiences/>
+      <PersonalCharacteristics/>
     </div>
   );
 };
