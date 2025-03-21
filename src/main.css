@@ -17,6 +17,24 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    h2 {
+        color: theme('colors.primary.DEFAULT');
+        margin-bottom: 1rem;
+        position: relative;
+        padding-left: 1rem;
+    }
+
+    h2::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 80%;
+        background: theme('colors.accent.DEFAULT');
+        border-radius: 2px;
+    }
 }
 body {
     background: #fff;

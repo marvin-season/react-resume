@@ -52,7 +52,7 @@ export default [
           {
             description: "工具库与组件库的开发、优化与维护",
             links: [
-              { label: "shadcn/", href: "https://ui.shadcn.com/" },
+              { label: "shadcn", href: "https://ui.shadcn.com/" },
             ],
           },
           {
