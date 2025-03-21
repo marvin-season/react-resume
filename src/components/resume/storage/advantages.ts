@@ -47,8 +47,6 @@ export default [
               },
             ],
           },
-          "跨平台开发实践：Electron 与 UniApp",
-          "熟悉 Vue 3/2 与 UniApp 开发",
           {
             description: "工具库与组件库的开发、优化与维护",
             links: [
@@ -80,6 +78,8 @@ export default [
             ],
           },
           "后端开发实践：Express 与 SpringBoot",
+          "跨平台开发实践：Electron 与 UniApp",
+          "熟悉 Vue 3/2 与 UniApp 开发",
         ],
       },
       {

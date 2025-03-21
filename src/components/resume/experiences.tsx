@@ -10,43 +10,41 @@ export default function Experiences() {
       {experiences.items.map((experience, index) => (
         <div key={index} className="mb-6 p-4 bg-card rounded-lg">
           <div className={"flex justify-between"}>
-            <p>
-              <span className="text-xl font-semibold">{experience.title}</span>
-              <span className="text-xl text-gray-600">
+            <div>
+              <span className="text-xl font-semibold mr-4">{experience.title}</span>
+              <span className="text-xl font-semibold text-gray-600">
                 {experience.company}
               </span>
-            </p>
+            </div>
             <span className="text-gray-500 mb-4">{experience.date}</span>
           </div>
 
           {experience.projects.map((project, idx) => (
             <div key={idx} className="mb-6">
-              <h4 className="text-xl font-semibold">{project.name}</h4>
+              <h4 className="text-lg font-semibold">{project.name}</h4>
               <p className="text-gray-700">{project.description}</p>
               <div className="list-disc pl-5 mt-2">
                 {project.responsibilities.map((responsibility, i) => (
-                  <div key={i} className="text-gray-700">
+                  <div key={i} className="pt-2 pl-4 text-gray-700">
                     <strong>{responsibility.area}:</strong>
-                    <div className="mt-2 pl-4 space-y-1">
-                      {responsibility.stack.map((stack, j) => (
-                        <div key={j} className="text-gray-600">
-                          {stack}
-                        </div>
-                      ))}
-                    </div>
-                    <div className="mt-2 pl-4 space-y-1">
+                    {responsibility.stack.map((stack, j) => (
+                      <div key={j} className="text-link">
+                        {stack}
+                      </div>
+                    ))}
+                    <div className="mt-2 space-y-1">
                       {responsibility.tasks.map((task, k) => (
                         <div key={k} className="text-gray-600">
                           {typeof task === "string" ? (
                             task
                           ) : (
-                            <div>
-                              <div className={"font-bold"}>
-                                {task.feature}
-                              </div>
-                              <div>
+                            <div className={"mb-4 pt-2"}>
+                              <div className={"font-bold"}>{task.feature}</div>
+                              <div className={"mb-3 pt-1"}>
                                 {task.details.map((detail, i) => (
-                                  <div key={i} className={"text-sm"}>{detail}</div>
+                                  <div key={i} className={"text-sm"}>
+                                    {detail}
+                                  </div>
                                 ))}
                               </div>
                             </div>

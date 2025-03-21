@@ -123,7 +123,7 @@ export default {
           ],
         },
         {
-          name: "爱问学 项目",
+          name: "爱问学",
           description: "基于大语言模型的智能问答系统",
           responsibilities: [
             {

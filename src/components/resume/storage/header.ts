@@ -3,7 +3,7 @@ export default {
   university: "武汉科技大学",
   links: [
     { type: "phone", label: "📞 15623192717", href: "tel:+8615623192717" },
-    { type: "email", label: "📧 Mail", href: "mailto:2764876579@qq.com" },
+    { type: "email", label: "📧 2764876579@qq.com", href: "mailto:2764876579@qq.com" },
     {
       type: "website",
       label: "🌐 fuelstack.icu",

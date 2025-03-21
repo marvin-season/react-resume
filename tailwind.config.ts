@@ -14,6 +14,9 @@ export default {
         'card': {
           DEFAULT: '#f8faff',
         },
+        link: {
+          DEFAULT: '#6383ee',
+        },
         accent: {
           DEFAULT: '#FFC847',
         }
