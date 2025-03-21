@@ -1,8 +1,8 @@
-import { Index } from "@/components/index";
+import Resume from "@/components/index";
 
 function App() {
   return <>
-    <Index />
+    <Resume />
   </>;
 }
 
