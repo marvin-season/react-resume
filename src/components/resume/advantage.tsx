@@ -10,7 +10,7 @@ export default function Advantage() {
             {advantage.title}
           </h2>
           {advantage.items.map((item, idx) => (
-            <div key={idx} className="mb-6 p-4 bg-card rounded-lg">
+            <div key={idx} className="mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]">
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <div className="list-disc pl-5">
                 {item.details.map((detail, i) => (
