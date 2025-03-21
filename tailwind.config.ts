@@ -11,6 +11,9 @@ export default {
         secondary: {
           DEFAULT: '#6C9BD2',
         },
+        'card': {
+          DEFAULT: '#f8faff',
+        },
         accent: {
           DEFAULT: '#FFC847',
         }

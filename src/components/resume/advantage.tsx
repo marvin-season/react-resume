@@ -4,13 +4,13 @@ import advantages from "@/components/resume/storage/advantages";
 export default function Advantage() {
   return <>
     {
-      advantages.map((section, index) => (
+      advantages.map((advantage, index) => (
         <section key={index} className="mb-12">
           <h2 className="text-2xl font-semibold text-blue-500 mb-4">
-            {section.title}
+            {advantage.title}
           </h2>
-          {section.items.map((item, idx) => (
-            <div key={idx} className="mb-6 p-4 bg-white rounded-lg shadow-md">
+          {advantage.items.map((item, idx) => (
+            <div key={idx} className="mb-6 p-4 bg-card rounded-lg">
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <ul className="list-disc pl-5">
                 {item.details.map((detail, i) => (
