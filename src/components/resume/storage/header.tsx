@@ -1,3 +1,6 @@
+import { Github } from "lucide-react";
+import React from "react";
+
 export default {
   title: "马文澍-Web开发工程师",
   university: "武汉科技大学",
@@ -11,7 +14,7 @@ export default {
     },
     {
       type: "github",
-      label: "📥 GitHub: marvin-season",
+      label: <div className={"flex items-center"}><Github height={16}/>marvin-season</div>,
       href: "https://github.com/marvin-season?tab=repositories",
     },
   ],

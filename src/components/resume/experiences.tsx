@@ -5,7 +5,7 @@ export default function Experiences() {
   return (
     <>
       <h2 className="text-2xl font-semibold text-blue-500 mb-4">
-        {experiences.title}
+        🤵🏻 {experiences.title}
       </h2>
       {experiences.items.map((experience, index) => (
         <div key={index} className="mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]">
