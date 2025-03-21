@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .header {
+        position: relative;
+    }
+
+    .header::after {
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 4px;
+        background-color: theme('colors.accent.DEFAULT');
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
