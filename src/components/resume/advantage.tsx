@@ -1,5 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import advantages from "@/components/resume/storage/advantages";
+import { ChevronDown, ChevronRight } from "lucide-react";
+// 获取数组元素类型
+type ElementType<T> = T extends (infer U)[] ? U : never;
+function AdvantageItem ({item}: {
+  item: ElementType<typeof advantages>['items'][0]
+}){
+  const [open, setOpen] = useState(true);
+  return <>
+    <div className="advantage mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]">
+      <div className={"advantage-header flex justify-between"} onClick={() => setOpen(!open)}>
+        <h3 className="text-xl font-semibold">{item.title}</h3>
+        { !open ? <ChevronRight className={"expand-arrow text-gray-400"}/> : <ChevronDown className={"expand-arrow text-gray-400"}/> }
+      </div>
+      <div className={`advantage-body list-disc pl-5 ${open ? 'w-auto': 'hidden'}`}>
+        {item.details.map((detail, i) => (
+          <div key={i} className="text-gray-700">
+            {typeof detail === "string" ? (
+              detail
+            ) : (
+              <>
+                <span>{detail.description}</span>
+                <div className="mt-2 pl-4 space-y-1 flex items-end gap-2">
+                  {detail.links?.map((link, j) => (
+                    <div key={j}>
+                      <a
+                        href={link.href}
+                        className="text-blue-500 hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {link.label}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </>
+}
 
 export default function Advantage() {
   return <>
@@ -10,36 +53,7 @@ export default function Advantage() {
             💪  {advantage.title}
           </h2>
           {advantage.items.map((item, idx) => (
-            <div key={idx} className="mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]">
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <div className="list-disc pl-5">
-                {item.details.map((detail, i) => (
-                  <div key={i} className="text-gray-700">
-                    {typeof detail === "string" ? (
-                      detail
-                    ) : (
-                      <>
-                        <span>{detail.description}</span>
-                        <div className="mt-2 pl-4 space-y-1 flex items-end gap-2">
-                          {detail.links?.map((link, j) => (
-                            <div key={j}>
-                              <a
-                                href={link.href}
-                                className="text-blue-500 hover:underline"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                {link.label}
-                              </a>
-                            </div>
-                          ))}
-                        </div>
-                      </>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
+            <AdvantageItem key={idx} item={item}></AdvantageItem>
           ))}
         </section>
       ))
