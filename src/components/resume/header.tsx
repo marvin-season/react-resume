@@ -1,5 +1,5 @@
 import React from "react";
-import header from "@/components/index/storage/header";
+import header from "@/components/resume/storage/header";
 
 export default function Header() {
   return (

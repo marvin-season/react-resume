@@ -1,4 +1,4 @@
-import Resume from "@/components/index";
+import Resume from "@/components/resume";
 
 function App() {
   return <>

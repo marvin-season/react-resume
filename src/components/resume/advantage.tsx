@@ -1,5 +1,5 @@
 import React from "react";
-import advantages from "@/components/index/storage/advantages";
+import advantages from "@/components/resume/storage/advantages";
 
 export default function Advantage() {
   return <>

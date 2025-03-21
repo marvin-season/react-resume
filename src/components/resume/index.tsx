@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "@/components/index/header.tsx";
-import Advantage from "@/components/index/advantage.tsx";
-import Experiences from "@/components/index/experiences.tsx";
+import Header from "@/components/resume/header.tsx";
+import Advantage from "@/components/resume/advantage.tsx";
+import Experiences from "@/components/resume/experiences.tsx";
 
 const Resume = () => {
   return (

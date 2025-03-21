@@ -1,5 +1,5 @@
 import React from "react";
-import experiences from "@/components/index/storage/experiences.ts";
+import experiences from "@/components/resume/storage/experiences.ts";
 
 export default function Experiences() {
   return (
