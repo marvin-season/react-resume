@@ -7,14 +7,15 @@ export default function Experiences() {
       <h2 className="text-2xl font-semibold text-blue-500 mb-4">
         🤵🏻 {experiences.title}
       </h2>
-      {experiences.items.map((experience, index) => (
-        <div key={index} className="draw-container mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]">
+      {experiences.items.map((experience, index) => <>
+        <div className="text-xl font-bold text-gray-700 flex gap-2">
+          <span>{experience.company}</span>
+          <span>✨</span>
+        </div>
+        <div key={index} className="draw-container mb-6 mt-2 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]">
           <div className={"flex justify-between"}>
             <div>
-              <span className="text-gray-500">
-                {experience.company}
-              </span>
-              <span className="text-gray-500 ml-4">{experience.title}</span>
+              <span className="text-gray-500">{experience.title}</span>
             </div>
             <span className="text-gray-500">{experience.date}</span>
           </div>
@@ -22,7 +23,7 @@ export default function Experiences() {
             {experience.projects.map((project, idx) => (
               <div key={idx} className="mb-6">
                 <div className={"flex gap-2 items-center"}>
-                  <h3 className="text-xl font-semibold">{project.name}</h3>
+                  <h3 className="text-lg font-semibold">{project.name}</h3>
                   <p className="text-gray-500">{project.description}</p>
                 </div>
                 <div className="mt-2">
@@ -61,7 +62,7 @@ export default function Experiences() {
             ))}
           </div>
         </div>
-      ))}
+      </>)}
     </>
   );
 }
