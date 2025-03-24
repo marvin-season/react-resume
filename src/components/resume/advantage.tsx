@@ -9,22 +9,15 @@ function AdvantageItem({
 }: {
   item: ElementType<typeof advantages>["items"][0];
 }) {
-  const [open, setOpen] = useState(false);
   return (
     <>
       <div className="draw-container advantage mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_20px_rgba(0,0,0,0.05)]">
         <div
           className={"draw-header flex justify-between cursor-pointer"}
-          onClick={() => setOpen(!open)}
-          onMouseEnter={() => setOpen(true)}
-          onMouseLeave={() => setOpen(false)}
         >
           <h3 className="text-xl font-semibold">{item.title}</h3>
-          <ChevronRight
-            className={`expand-arrow text-gray-400 transition-all ${open ? "rotate-90" : "right-0"}`}
-          />
         </div>
-        <div className={`draw-body ${open ? "draw-body-visible" : ""}`}>
+        <div className={`draw-body`}>
           {item.details.map((detail, i) => (
             <div key={i} className="text-gray-700">
               {typeof detail === "string" ? (
