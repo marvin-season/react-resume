@@ -37,17 +37,6 @@
         border-radius: 2px;
     }
 
-    .expand-content {
-        cursor: pointer;
-        transition: all 2s;
-        overflow: hidden;
-        max-height: 56px;
-
-        &:hover {
-            max-height: 1000px;
-        }
-    }
-
     .draw-container {
         position: relative;
         cursor: pointer;
@@ -80,8 +69,6 @@
             overflow-y: scroll;
 
             padding: 20px;
-            list-style-type: disc;
-
         }
     }
 
