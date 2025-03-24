@@ -46,6 +46,40 @@
         }
     }
 
+    .draw-container {
+        position: relative;
+        .draw-header {
+            /*z-index: 999;*/
+            /*position: absolute;*/
+            /*height: 60px;*/
+        }
+        .draw-body {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-12px);
+            transition: all 0.3s ease-in-out;
+
+            position: absolute;
+            left: 0;
+            z-index: 999;
+            width: 100%;
+
+
+            background: linear-gradient(to bottom, theme('colors.card.DEFAULT'), theme('colors.white'));
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+
+            padding: 20px;
+            list-style-type: disc;
+
+        }
+        .draw-body-visible {
+            transform: translateY(1rem);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
 }
 body {
     background: #fff;
