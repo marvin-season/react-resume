@@ -12,7 +12,7 @@ export default function Experiences() {
           <span>{experience.company}</span>
           <span>✨</span>
         </div>
-        <div key={index} className="draw-container mb-6 mt-2 p-4 bg-card rounded-lg shadow-[inset_1px_1px_10px_rgba(0,0,0,0.05)]">
+        <div key={index} className="draw-container mb-6 mt-2 p-4 bg-card rounded-lg">
           <div className={"flex justify-between"}>
             <div>
               <span className="text-gray-500">{experience.title}</span>

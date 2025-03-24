@@ -11,7 +11,7 @@ function AdvantageItem({
 }) {
   return (
     <>
-      <div className="draw-container advantage mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_20px_rgba(0,0,0,0.05)]">
+      <div className="draw-container advantage mb-6 p-4 bg-card rounded-lg">
         <div
           className={"flex justify-between cursor-pointer"}
         >
