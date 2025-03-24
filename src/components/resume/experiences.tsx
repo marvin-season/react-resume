@@ -29,15 +29,15 @@ export default function Experiences() {
                 <div className="mt-2">
                   {project.responsibilities.map((responsibility, i) => (
                     <div key={i} className="pt-2 pl-4 text-gray-700">
-                      <strong>{responsibility.area}:</strong>
+                      <strong className={"text-[17px]"}>{responsibility.area}:</strong>
                       {responsibility.stack.map((stack, j) => (
-                        <div key={j} className="text-link">
+                        <div key={j} className="text-link text-sm">
                           {stack}
                         </div>
                       ))}
                       <div className="mt-2 space-y-1">
                         {responsibility.tasks.map((task, k) => (
-                          <div key={k} className="text-gray-600">
+                          <div key={k} className="text-gray-600 ml-8">
                             {typeof task === "string" ? (
                               task
                             ) : (

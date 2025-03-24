@@ -11,18 +11,6 @@ export default {
           description: "综合平台解决方案，包括官网、管理系统和学习平台",
           responsibilities: [
             {
-              area: "管理后台开发",
-              stack: [
-                "Vue2, ECharts, ElementUI, VueRouter",
-              ],
-              tasks: [
-                "基于 Vue2 开发管理后台系统",
-                "实现角色权限管理功能",
-                "开发资源监控模块",
-                "优化数据模块管理",
-              ],
-            },
-            {
               area: "租户端开发",
               stack: [
                 "React.js, React-Router, Redux, ShadcnUI, TailwindCSS, Tank-Query, ReactFlow, React-Windows, Fetch, Vite",
@@ -90,6 +78,18 @@ export default {
               ],
             },
             {
+              area: "管理后台开发",
+              stack: [
+                "Vue2, ECharts, ElementUI, VueRouter",
+              ],
+              tasks: [
+                "基于 Vue2 开发管理后台系统",
+                "实现角色权限管理功能",
+                "开发资源监控模块",
+                "优化数据模块管理",
+              ],
+            },
+            {
               area: "官网开发",
               stack: ["Next.js, TailwindCSS, ShadcnUI, SSR, ISR, Strapi-CMS"],
               tasks: [
@@ -101,7 +101,7 @@ export default {
                   ],
                 },
                 {
-                  feature: "官网开发",
+                  feature: "官网",
                   details: [
                     "使用 Next.js 开发响应式官网",
                     "进行 SEO 优化",
