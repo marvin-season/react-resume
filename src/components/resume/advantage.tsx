@@ -13,7 +13,7 @@ function AdvantageItem({
     <>
       <div className="draw-container advantage mb-6 p-4 bg-card rounded-lg shadow-[inset_1px_1px_20px_rgba(0,0,0,0.05)]">
         <div
-          className={"draw-header flex justify-between cursor-pointer"}
+          className={"flex justify-between cursor-pointer"}
         >
           <h3 className="text-xl font-semibold">{item.title}</h3>
         </div>
