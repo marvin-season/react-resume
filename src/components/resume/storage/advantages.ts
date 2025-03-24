@@ -30,7 +30,7 @@ export default [
           {
             description: "富文本编辑器定制开发经验与优化",
             links: [
-              { label: "🌐 AI 智能书写demo", href: "http://ai.fuelstack.icu" },
+              { label: "🌐 AI智能书写", href: "http://ai.fuelstack.icu" },
               { label: "📥 GitHub", href: "https://github.com/marvin-season/ai-novel" },
             ],
           },
@@ -57,7 +57,7 @@ export default [
             description: "CMS 内容管理系统的开发与自托管",
             links: [
               {
-                label: "Strapi self-host",
+                label: "Strapi",
                 href: "https://github.com/marvin-season/strapi-non-commerical-starter",
               },
             ],
@@ -65,14 +65,14 @@ export default [
           {
             description: "错误追踪与监控系统开发",
             links: [
-              { label: "sentry-react demo", href: "https://github.com/marvin-season/sentry-react" },
+              { label: "Sentry", href: "https://github.com/marvin-season/sentry-react" },
             ],
           },
           {
             description: "Web 性能优化与用户体验改进",
             links: [
               {
-                label: "好的用户体验是最重要的",
+                label: "UPP (User Perceived Performance)",
                 href: "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Fundamentals",
               },
             ],

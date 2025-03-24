@@ -1,6 +1,4 @@
-import React, { useState } from "react";
 import advantages from "@/components/resume/storage/advantages";
-import { ChevronRight } from "lucide-react";
 // 获取数组元素类型
 type ElementType<T> = T extends (infer U)[] ? U : never;
 
@@ -19,13 +17,13 @@ function AdvantageItem({
         </div>
         <div className={`draw-body`}>
           {item.details.map((detail, i) => (
-            <div key={i} className="text-gray-700">
+            <div key={i} className="flex gap-2 items-end text-gray-500 leading-8">
               {typeof detail === "string" ? (
                 detail
               ) : (
                 <>
                   <span>{detail.description}</span>
-                  <div className="mt-2 pl-4 space-y-1 flex items-end gap-2">
+                  <div className="flex items-end gap-2">
                     {detail.links?.map((link, j) => (
                       <div key={j}>
                         <a
