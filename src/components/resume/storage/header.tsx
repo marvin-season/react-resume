@@ -2,7 +2,7 @@ import { FileUser, Github, Notebook, Phone } from "lucide-react";
 import React from "react";
 
 export default {
-  title: "Web开发工程师-马文澍",
+  title: "Web开发工程师",
   university: "武汉科技大学",
   links: [
     {

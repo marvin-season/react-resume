@@ -72,6 +72,15 @@
         }
     }
 
+    .hover-transition {
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            transform: translateY(-4px) translateX(2px);
+            box-shadow: 0 4px 15px rgba(42,92,170,0.1)
+        }
+    }
+
 }
 
 body {
