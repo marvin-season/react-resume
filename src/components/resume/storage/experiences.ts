@@ -170,10 +170,10 @@ export default {
       projects: [
         {
           name: "巨实惠",
-          description: "电商平台",
+          description: "电商平台，专注于为用户提供优质的购物体验",
           responsibilities: [
             {
-              area: "小程序开发",
+              area: "开发与维护",
               stack: ["Vue2, UniApp, Vuex, VantUI"],
               tasks: [
                 {
@@ -206,10 +206,10 @@ export default {
         responsibilities: [
           {
             area: "小程序开发",
-            stack: ["SpringBoot, Mybatis, MySQL"],
+            stack: ["Java, SpringBoot, Mybatis, MySQL"],
             tasks: [
               {
-                feature: '接口开发',
+                feature: '后端接口开发',
                 details: [
                   "会员模块接口开发",
                   "优惠券模块接口开发",
@@ -219,10 +219,16 @@ export default {
                 ]
               },
               {
-                feature: '前端开发',
+                feature: 'Web 开发(Vue2)',
                 details: [
                   "会员管理系统",
                   "优惠券管理系统",
+                ]
+              },
+              {
+                feature: 'Uniapp 开发',
+                details: [
+                  "用户个人中心页面开发",
                 ]
               }
             ],
