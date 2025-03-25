@@ -8,7 +8,7 @@ export default {
       projects: [
         {
           name: "神州问学",
-          description: "综合平台解决方案，包括官网、管理系统和学习平台",
+          description: "企业级AI应用一站式构建管理平台，全面打通模型、数据、应用和算力四大要素。",
           responsibilities: [
             {
               area: "租户端开发",
@@ -78,15 +78,20 @@ export default {
               ],
             },
             {
-              area: "管理后台开发",
+              area: "管理后台",
               stack: [
                 "Vue2, ECharts, ElementUI, VueRouter",
               ],
               tasks: [
-                "基于 Vue2 开发管理后台系统",
-                "实现角色权限管理功能",
-                "开发资源监控模块",
-                "优化数据模块管理",
+                {
+                  feature: '开发管理后台',
+                  details: [
+                    "基于 Vue2 开发管理后台系统",
+                    "实现角色权限管理功能",
+                    "开发资源监控模块",
+                    "优化数据模块管理",
+                  ]
+                }
               ],
             },
             {
@@ -114,10 +119,15 @@ export default {
               area: "独立应用开发维护",
               stack: ["React.js, ShadcnUI, TailwindCSS, Vite"],
               tasks: [
-                "入门生成型应用",
-                "基础对话型应用",
-                "强化增强型应用(Web与H5)",
-                "综合智能体应用(Web与H5)",
+                {
+                  feature: "多种类型应用开发",
+                  details: [
+                    "入门生成型应用",
+                    "基础对话型应用",
+                    "强化增强型应用(Web与H5)",
+                    "综合智能体应用(Web与H5)",
+                  ]
+                }
               ],
             },
           ],
@@ -130,13 +140,23 @@ export default {
               area: "架构设计",
               stack: ["ExpressJs, React18, Prisma, PostgresSQL, RAG, TailwindCSS"],
               tasks: [
-                "使用 Node.js 和 Express 开发后端服务",
-                "搭建并开发 Prisma 和 PostgresSQL 环境",
-                "使用 React18 开发前端应用",
-                "集成 Ollama 实现本地大模型部署",
-                "实现 RAG 检索增强与工具调用特性",
-                "开发富文本编辑器与 AI 智能书写系统",
-                "支持 DeepSeek-R1 深度思考功能",
+                {
+                  feature: '前端AI交互逻辑开发',
+                  details: [
+                    "开发富文本编辑器与 AI 智能书写系统",
+                    "支持 DeepSeek-R1 深度思考功能",
+                  ]
+                },
+                {
+                  feature: '接口开发',
+                  details: [
+                    "使用 Node.js 和 Express 开发后端服务",
+                    "搭建并开发 Prisma 和 PostgresSQL 环境",
+                    "使用 React18 开发前端应用",
+                    "集成 Ollama 实现本地大模型部署",
+                    "实现 RAG 检索增强与工具调用特性",
+                  ]
+                }
               ],
             },
           ],
@@ -156,16 +176,20 @@ export default {
               area: "小程序开发",
               stack: ["Vue2, UniApp, Vuex, VantUI"],
               tasks: [
-                "实现商品管理系统",
-                "开发购物车和订单系统",
-              ],
-            },
-            {
-              area: "管理后台开发",
-              stack: ["React.js, AntDesign, React-Router, Redux"],
-              tasks: [
-                "用户管理系统",
-                "首页装修系统-低代码",
+                {
+                  feature: '小程序开发',
+                  details: [
+                    "实现商品管理系统",
+                    "开发购物车和订单系统",
+                  ]
+                },
+                {
+                  feature: '管理后台开发',
+                  details: [
+                    "用户管理系统",
+                    "首页装修系统-低代码",
+                  ]
+                }
               ],
             },
           ],
@@ -181,22 +205,26 @@ export default {
         description: "健康星球是一款健康管理软件",
         responsibilities: [
           {
-            area: "接口开发",
+            area: "小程序开发",
             stack: ["SpringBoot, Mybatis, MySQL"],
             tasks: [
-              "会员模块接口开发",
-              "优惠券模块接口开发",
-              "会员信息统计",
-              "优惠券配发",
-              "收银台打印小票功能",
-            ],
-          },
-          {
-            area: "前端开发",
-            stack: ["Vue2, ElementUI"],
-            tasks: [
-              "会员管理系统",
-              "优惠券管理系统",
+              {
+                feature: '接口开发',
+                details: [
+                  "会员模块接口开发",
+                  "优惠券模块接口开发",
+                  "会员信息统计",
+                  "优惠券配发",
+                  "收银台打印小票功能",
+                ]
+              },
+              {
+                feature: '前端开发',
+                details: [
+                  "会员管理系统",
+                  "优惠券管理系统",
+                ]
+              }
             ],
           },
         ],
