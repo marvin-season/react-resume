@@ -1,6 +1,6 @@
 import React from "react";
-import experiences from "@/components/resume/storage/experiences.ts";
-import { Folder } from "lucide-react";
+import experiences from "@/components/resume/storage/experiences.tsx";
+import { Folder, GitBranch } from "lucide-react";
 
 export default function Experiences() {
   return (
@@ -9,9 +9,8 @@ export default function Experiences() {
         🤵🏻 {experiences.title}
       </h2>
       {experiences.items.map((experience, index) => <>
-        <div className="text-xl font-bold text-gray-700 flex gap-2">
+        <div className="text-xl font-bold text-[#222] flex gap-2 py-4">
           <span>{experience.company}</span>
-          <span>✨</span>
         </div>
         <div key={index} className="draw-container mb-6 mt-2 p-4 bg-card rounded-lg">
           <div className={"flex items-center justify-between py-1"}>
@@ -22,25 +21,34 @@ export default function Experiences() {
             {experience.projects.map((project, idx) => (
               <div key={idx} className="mb-6">
                 <div className={"flex gap-2 items-center mt-2"}>
-                  <div className="text-lg font-semibold flex gap-2 items-center">
-                    <Folder/>{project.name}
+                  <div className="text-lg text-[#333] font-bold flex gap-2 items-center">
+                    <Folder/>
+                    <span>{project.name}</span>
                   </div>
-                  <p className="text-gray-500">{project.description}</p>
+                  <p className="text-gray-500 text-[15px]">{project.description}</p>
                 </div>
-                <div className="mt-2">
+                <div className="mt-2 pl-4">
                   {project.responsibilities.map((responsibility, i) => (
                     <div key={i} className="pt-2">
-                      <span className={"text-[17px] font-bold text-gray-600"}>{responsibility.area}</span>
-                      {responsibility.stack.map((stack, j) => (
-                        <div key={j} className="text-link text-sm">
-                          {stack}
-                        </div>
-                      ))}
+                      <div className={"flex gap-2 items-center font-semibold text-[#444] text-[17px]"}>
+                        <GitBranch className={"w-5"}/>
+                        <span className={""}>{responsibility.area}</span>
+                      </div>
+                      <div className={""}>
+                        {responsibility.stack.map((stack, j) => (
+                          <div key={j} className="text-link text-sm">
+                            {stack}
+                          </div>
+                        ))}
+                      </div>
                       <div className="mt-2 space-y-1">
                         {responsibility.tasks.map((task, k) => (
-                          <div key={k} className="text-gray-600">
+                          <div key={k} className="">
                             <div className={"mb-4 pt-2"}>
-                              <div className={"font-bold text-blue-500"}>{task.feature}</div>
+                              <div className={"flex gap-2 items-center"}>
+                                {task?.icon}
+                                <span className={"font-semibold text-gray-600 text-sm"}>{task.feature}</span>
+                              </div>
                               <div className={"mb-3 pt-1 flex gap-2 flex-wrap"}>
                                 {task.details.map((detail, i) => (
                                   <div key={i} className={"text-sm"}>

@@ -1,9 +1,21 @@
+import {
+  BotMessageSquareIcon, Brain, DatabaseZap, Dock,
+  FileText,
+  Languages,
+  Monitor,
+  MousePointer, Server, ShoppingBag, Smartphone,
+  TrendingUp,
+  Workflow,
+  Zap,
+} from "lucide-react";
+import { Document } from "postcss";
+
 export default {
   title: '工作经历',
   items: [
     {
       title: "Web开发工程师",
-      company: "神州数码",
+      company: "神州数码.通明湖云和信创研究院.AI产研中心",
       date: "2023.06 - 至今",
       projects: [
         {
@@ -24,6 +36,7 @@ export default {
                     "开发富文本输入系统",
                     "实现多媒体消息面板",
                   ],
+                  icon: <BotMessageSquareIcon className={"w-4"}/>
                 },
                 {
                   feature: "文档处理",
@@ -32,6 +45,7 @@ export default {
                     "开发 Excel 数据解析与虚拟化显示",
                     "设计 Markdown 渲染与高亮系统",
                   ],
+                  icon: <FileText className={"w-4"}/>
                 },
                 {
                   feature: "国际化方案",
@@ -41,6 +55,7 @@ export default {
                     "实现 CSV 导出和配置生成",
                     "标准化国际化流程",
                   ],
+                  icon: <Languages className={"w-4"}/>
                 },
                 {
                   feature: "新用户引导",
@@ -49,6 +64,7 @@ export default {
                     "开发高阶组件",
                     "实现引导位置算法",
                   ],
+                  icon: <MousePointer className={"w-4"}/>
                 },
                 {
                   feature: "工作流系统",
@@ -57,6 +73,7 @@ export default {
                     "设计流程图数据结构",
                     "开发工作流组件",
                   ],
+                  icon: <Workflow className={"w-4"}/>
                 },
                 {
                   feature: "性能优化",
@@ -65,6 +82,7 @@ export default {
                     "实现资源懒加载和数据虚拟化",
                     "优化打包体积和实现代码分割",
                   ],
+                  icon: <Zap className={"w-4"}/>
                 },
                 {
                   feature: "业余技能",
@@ -74,6 +92,7 @@ export default {
                     "使用 Github Actions 实现 CI/CD",
                     "使用 Github Pages 部署静态网站",
                   ],
+                  icon: <TrendingUp className={"w-4"}/>
                 },
               ],
             },
@@ -90,7 +109,8 @@ export default {
                     "实现角色权限管理功能",
                     "开发资源监控模块",
                     "优化数据模块管理",
-                  ]
+                  ],
+                  icon: <Monitor className={"w-4"}/>
                 }
               ],
             },
@@ -104,6 +124,7 @@ export default {
                     "部署开源 Strapi-CMS",
                     "进行模型设计和 E-R 实体创建",
                   ],
+                  icon: <DatabaseZap className={"w-4"}/>
                 },
                 {
                   feature: "官网",
@@ -112,6 +133,7 @@ export default {
                     "进行 SEO 优化",
                     "实现 ISR/SSR 预渲染",
                   ],
+                  icon: <Dock className={"w-4"}/>
                 },
               ],
             },
@@ -126,7 +148,8 @@ export default {
                     "基础对话型应用",
                     "强化增强型应用(Web与H5)",
                     "综合智能体应用(Web与H5)",
-                  ]
+                  ],
+                  icon: <Brain className={"w-4"}/>
                 }
               ],
             },
@@ -145,7 +168,8 @@ export default {
                   details: [
                     "开发富文本编辑器与 AI 智能书写系统",
                     "支持 DeepSeek-R1 深度思考功能",
-                  ]
+                  ],
+                  icon: <Brain className={"w-4"}/>
                 },
                 {
                   feature: '接口开发',
@@ -155,7 +179,8 @@ export default {
                     "使用 React18 开发前端应用",
                     "集成 Ollama 实现本地大模型部署",
                     "实现 RAG 检索增强与工具调用特性",
-                  ]
+                  ],
+                  icon: <Server className={"w-4"}/>
                 }
               ],
             },
@@ -181,14 +206,16 @@ export default {
                   details: [
                     "实现商品管理系统",
                     "开发购物车和订单系统",
-                  ]
+                  ],
+                  icon: <ShoppingBag className={"w-4"}/>
                 },
                 {
                   feature: '管理后台开发',
                   details: [
                     "用户管理系统",
                     "首页装修系统-低代码",
-                  ]
+                  ],
+                  icon: <Monitor className={"w-4"}/>
                 }
               ],
             },
@@ -216,20 +243,23 @@ export default {
                   "会员信息统计",
                   "优惠券配发",
                   "收银台打印小票功能",
-                ]
+                ],
+                icon: <Server className={"w-4"}/>
               },
               {
                 feature: 'Web 开发(Vue2)',
                 details: [
                   "会员管理系统",
                   "优惠券管理系统",
-                ]
+                ],
+                icon: <Monitor className={"w-4"}/>
               },
               {
                 feature: 'Uniapp 开发',
                 details: [
                   "用户个人中心页面开发",
-                ]
+                ],
+                icon: <Smartphone className={"w-4"}/>
               }
             ],
           },
