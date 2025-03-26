@@ -85,11 +85,18 @@ export default [
               },
             ],
           },
+        ],
+      },
+      {
+        title: '其他优势',
+        details: [
+          "前端项目架构",
+          "从0到1搭建前端项目，搭建Mono-Repo项目，实现多项目共享组件库",
           "后端开发实践：Express 与 SpringBoot",
           "跨平台开发实践：Electron 与 UniApp",
           "熟悉 Vue 3/2 与 UniApp 开发",
-        ],
-      },
+        ]
+      }
     ],
   },
 ]

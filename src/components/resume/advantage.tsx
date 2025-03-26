@@ -17,9 +17,9 @@ function AdvantageItem({
         </div>
         <div className={`draw-body`}>
           {item.details.map((detail, i) => (
-            <div key={i} className="flex gap-2 items-end text-gray-500 leading-8">
+            <div key={i} className="flex gap-2 items-end text-gray-500 leading-8 text-sm">
               {typeof detail === "string" ? (
-                detail
+                <span>{detail}</span>
               ) : (
                 <>
                   <span>{detail.description}</span>
