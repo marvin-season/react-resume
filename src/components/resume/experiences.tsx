@@ -1,6 +1,15 @@
 import React from "react";
 import experiences from "@/components/resume/storage/experiences.tsx";
-import { AppWindow, AppWindowMac, Building, Building2, FlagTriangleRight, Folder, GitBranch } from "lucide-react";
+import {
+  AppWindow,
+  AppWindowMac,
+  Building,
+  Building2,
+  ExternalLink,
+  FlagTriangleRight,
+  Folder,
+  GitBranch,
+} from "lucide-react";
 
 export default function Experiences() {
   return (
@@ -24,10 +33,13 @@ export default function Experiences() {
                 <div className={"mt-2"}>
                   <div className="text-lg text-[#333] font-bold flex gap-2 items-center">
                     <span>项目.{project.name}</span>
+                    { project.link && <a href={project.link} className={"text-link"}>
+                      <ExternalLink className={"w-4"}/>
+                    </a> }
                   </div>
                   <p className="text-gray-500 text-sm pt-1">{project.description}</p>
                 </div>
-                <div className="mt-2 pl-4">
+                <div className="mt-2">
                   {project.responsibilities.map((responsibility, i) => (
                     <div key={i} className="pt-2">
                       <div className={"flex gap-2 items-center font-semibold text-[#444] text-[17px]"}>

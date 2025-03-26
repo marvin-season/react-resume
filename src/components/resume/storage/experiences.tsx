@@ -21,6 +21,7 @@ export default {
         {
           name: "神州问学",
           description: "企业级AI应用一站式构建管理平台，全面打通模型、数据、应用和算力四大要素。",
+          link: 'https://smartvision.dcclouds.com/welcome',
           responsibilities: [
             {
               area: "租户端开发",
@@ -158,6 +159,7 @@ export default {
         {
           name: "爱问学",
           description: "基于大语言模型的智能问答系统，支持云端调用DeepSeek免费满血版或者本地下载DeepSeek轻量精简版",
+          link: 'https://aipc.dcclouds.com/',
           responsibilities: [
             {
               area: "架构设计",
@@ -196,6 +198,7 @@ export default {
         {
           name: "巨实惠",
           description: "电商平台，专注于为用户提供优质的购物体验",
+          link: '',
           responsibilities: [
             {
               area: "开发与维护",
@@ -230,6 +233,7 @@ export default {
       projects: [{
         name: "健康星球",
         description: "健康星球是一款健康管理软件",
+        link: '',
         responsibilities: [
           {
             area: "小程序开发",
