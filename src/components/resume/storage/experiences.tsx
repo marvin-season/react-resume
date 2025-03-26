@@ -157,7 +157,7 @@ export default {
         },
         {
           name: "爱问学",
-          description: "基于大语言模型的智能问答系统",
+          description: "基于大语言模型的智能问答系统，支持云端调用DeepSeek免费满血版或者本地下载DeepSeek轻量精简版",
           responsibilities: [
             {
               area: "架构设计",

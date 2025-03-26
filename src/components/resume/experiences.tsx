@@ -1,6 +1,6 @@
 import React from "react";
 import experiences from "@/components/resume/storage/experiences.tsx";
-import { Folder, GitBranch } from "lucide-react";
+import { AppWindow, AppWindowMac, Building, Building2, FlagTriangleRight, Folder, GitBranch } from "lucide-react";
 
 export default function Experiences() {
   return (
@@ -10,6 +10,7 @@ export default function Experiences() {
       </h2>
       {experiences.items.map((experience, index) => <>
         <div className="text-xl font-bold text-[#222] flex gap-2 py-4">
+          <Building2/>
           <span>{experience.company}</span>
         </div>
         <div key={index} className="draw-container mb-6 mt-2 p-4 bg-card rounded-lg">
@@ -20,18 +21,17 @@ export default function Experiences() {
           <div className={"draw-body"}>
             {experience.projects.map((project, idx) => (
               <div key={idx} className="mb-6">
-                <div className={"flex gap-2 items-center mt-2"}>
+                <div className={"mt-2"}>
                   <div className="text-lg text-[#333] font-bold flex gap-2 items-center">
-                    <Folder/>
-                    <span>{project.name}</span>
+                    <span>项目.{project.name}</span>
                   </div>
-                  <p className="text-gray-500 text-[15px]">{project.description}</p>
+                  <p className="text-gray-500 text-sm pt-1">{project.description}</p>
                 </div>
                 <div className="mt-2 pl-4">
                   {project.responsibilities.map((responsibility, i) => (
                     <div key={i} className="pt-2">
                       <div className={"flex gap-2 items-center font-semibold text-[#444] text-[17px]"}>
-                        <GitBranch className={"w-5"}/>
+                        <AppWindowMac className={"w-5"}/>
                         <span className={""}>{responsibility.area}</span>
                       </div>
                       <div className={""}>
