@@ -7,7 +7,7 @@ import BaseInfo from "@/components/resume/baseinfo.tsx";
 
 const Resume = () => {
   return (
-    <div className="m-4 max-w-4xl mx-auto py-6 px-16 rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.25)]">
+    <div id={'resume'} className="m-4 max-w-4xl mx-auto py-6 px-16 rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.25)]">
       <Header/>
       <BaseInfo/>
       <Advantage/>
